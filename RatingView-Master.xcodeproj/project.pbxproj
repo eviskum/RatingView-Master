@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		90BDC40F265D34B700A1819E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BDC40E265D34B700A1819E /* ContentView.swift */; };
 		90BDC411265D34BA00A1819E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BDC410265D34BA00A1819E /* Assets.xcassets */; };
 		90BDC414265D34BA00A1819E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BDC413265D34BA00A1819E /* Preview Assets.xcassets */; };
+		90BDC424265D395E00A1819E /* RatingView in Frameworks */ = {isa = PBXBuildFile; productRef = 90BDC423265D395E00A1819E /* RatingView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		90BDC410265D34BA00A1819E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90BDC413265D34BA00A1819E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90BDC415265D34BA00A1819E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90BDC421265D38FA00A1819E /* RatingView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RatingView; path = ../RatingView; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90BDC424265D395E00A1819E /* RatingView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +39,10 @@
 		90BDC400265D34B700A1819E = {
 			isa = PBXGroup;
 			children = (
+				90BDC421265D38FA00A1819E /* RatingView */,
 				90BDC40B265D34B700A1819E /* RatingView-Master */,
 				90BDC40A265D34B700A1819E /* Products */,
+				90BDC422265D395E00A1819E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +74,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		90BDC422265D395E00A1819E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +97,9 @@
 			dependencies = (
 			);
 			name = "RatingView-Master";
+			packageProductDependencies = (
+				90BDC423265D395E00A1819E /* RatingView */,
+			);
 			productName = "RatingView-Master";
 			productReference = 90BDC409265D34B700A1819E /* RatingView-Master.app */;
 			productType = "com.apple.product-type.application";
@@ -328,6 +343,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90BDC423265D395E00A1819E /* RatingView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RatingView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90BDC401265D34B700A1819E /* Project object */;
 }

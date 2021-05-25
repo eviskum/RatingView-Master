@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import RatingView
 
 struct ContentView: View {
+    @State private var currentRating = 0
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            RatingView(maxRating: 5, currentRating: $currentRating)
+            Text("My Ratings")
+        }
     }
 }
 
